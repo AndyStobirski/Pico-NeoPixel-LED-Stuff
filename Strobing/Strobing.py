@@ -1,10 +1,4 @@
-#
-#	An 11 LED strip of WS2812B running off VBUS and GND
-#	for power and GP28 for data.
-#
-#	And yes I know the colours for the wires for VBUS and GND
-#	are the wrong way round - it was late and I was tired
-#
+
 import time
 from machine import Pin, Timer
 from libs.neopixel import Neopixel
