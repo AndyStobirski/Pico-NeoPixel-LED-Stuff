@@ -1,2 +1,2 @@
 # Pico-NeoPixel-LED-Stuff
-Experiments with the Raspbery pi PICO and 
+Experiments with the Raspbery Pi Pico and NeoPixles with Thonny.
