@@ -15,8 +15,10 @@ ledHours = (0,5)
 ledMinutes = (5,11)
 
 
-pixels.brightness(1)
+pixels.brightness(32)
 
+#pixels.set_pixel(1, lightBlue)
+#pixels.show()
 
 #
 #	Set the led range, derived from pPadLength
@@ -34,7 +36,7 @@ def setValues (pValue, pPadLength):
  
     for p in range(ledRange[0],ledRange[1]):
         if b[p-ledRange[0]] ==  '1':
-            pixels.set_pixel(p, (randrange(254)+1,randrange(254)+1,randrange(254)+1))
+            pixels.set_pixel(p, ledColour)
         else:
             pixels.set_pixel(p, off)
             
@@ -61,7 +63,6 @@ def counter(timer):
     
     setValues(minute,6)
     setValues(hour,5)
-    
 
     minute+=1
     if minute > 59:
@@ -72,7 +73,7 @@ def counter(timer):
     
     pixels.show()
     
-timer.init(freq=10, mode=Timer.PERIODIC, callback=counter)
+timer.init(freq=20, mode=Timer.PERIODIC, callback=counter)
 
 
     
