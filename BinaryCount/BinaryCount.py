@@ -21,8 +21,7 @@ pixels.brightness(32)
 #pixels.show()
 
 #
-#	Set the led range, derived from pPadLength
-#	to the value specified by pValue
+# Set the led range, derived from pPadLength to the value specified by pValue
 #
 def setValues (pValue, pPadLength):
     
@@ -43,12 +42,14 @@ def setValues (pValue, pPadLength):
     pixels.show()
 
 #
-#	Convert pVal to it's binary representation of length pPadlen
-#	
+# Convert pVal to it's binary representation of length pPadlen
+# We a string 5 chars long for hours, and 6 chars long for minutes
+# hence the use of padding.
+#
 def intToBin(pVal, pPadLen):
-    b = bin(pVal)	#returns 0b....
-    b = '000000' + b[-(len(b)-2):]	#trim off the first two chars
-    b = b[-pPadLen:]	#get the right pPadLen characters
+    b = bin(pVal) #returns 0b....
+    b = '000000' + b[-(len(b)-2):] #trim off the first two chars
+    b = b[-pPadLen: #get the right pPadLen characters
     return b
 
 hour = 0
@@ -56,6 +57,7 @@ minute = 0
 
 timer = Timer()
 
+# Increment hours and moinutes here
 def counter(timer):
     
     global hour
