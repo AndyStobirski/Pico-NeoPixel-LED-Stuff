@@ -15,9 +15,11 @@ This is a simple project which tests an OLED display with an SSD1330 driver. It 
  
  ## Wiring
  
- Neopixel din = P28
- Mode select button = P15
- Colour set = P14
- Potentiometer = P27
- Display = SCL:P17, SDA:16
+ Components are connected as follows:
+ 
+ * Neopixel din = P28
+ * Mode select button = P15
+ * Colour set = P14
+ * Potentiometer = P27
+ * Display = SCL:P17, SDA:16
  
