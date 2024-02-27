@@ -1,7 +1,11 @@
 # PicoProjects
-Experiments with the Raspbery Pi Pico, NeoPixles and other components with Thonny.
+Experiments with the Raspbery Pi Pico, [Waveshare PR2040 Matrix](https://thepihut.com/products/waveshare-rp2040-matrix-development-board), NeoPixles and other components with [Thonny](https://github.com/thonny).
 
 ## Resources
+
+### Thonny
+
+Thonny, Python IDE for beginners
 
 ### Python
 
